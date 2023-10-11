@@ -20,6 +20,7 @@ export class CardCarouselComponent implements OnInit {
 	];
 
 	currentIndex = 0;
+	interval: any; // Variável para armazenar o intervalo
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.carouselImages.length;
@@ -32,6 +33,10 @@ export class CardCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+		// Inicia o intervalo para avançar automaticamente os slides a cada 3 segundos
+   this.interval = setInterval(() => {
+    this.nextSlide();
+  }, 5000);
   }
 
 }
