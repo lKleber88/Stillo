@@ -1,0 +1,83 @@
+.carousel-container {
+	position: relative;
+  text-align: center;
+  width: 100%; /* Use 100% para que o carrossel ocupe a largura disponível */
+
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+
+}
+
+.slide {
+  flex: 0 0 100%;
+	margin-top: 20px;
+
+}
+
+.slide img {
+  position: relative;
+	border: 3px solid #bbc0bca9;
+	border-radius: 10px;
+	width: 700px;
+	height: 400px;
+	margin-left: 25%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 80px;
+	margin-bottom: 30px;
+
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.active {
+  transform: translateX(0);
+
+}
+
+.arrow-container {
+  width: 60px; /* A largura do contêiner deve corresponder à largura da imagem */
+  display: flex;
+   /* Coloca as setas à esquerda e à direita */
+  align-items: center; /* Centraliza verticalmente as setas */
+  position: absolute;
+  top: 0;
+}
+
+.arrow {
+  font-size: 100px; /* Tamanho do ícone de seta */
+  cursor: pointer;
+	background-color: #98959551; /* Cor de fundo padrão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave */
+
+}
+
+.left-arrow {
+	z-index: 998;
+	color: #090909;
+	margin-top: 16%;
+	left: 25%;
+}
+
+.right-arrow {
+	z-index: 998;
+	margin-top: 16%;
+	left: 67.1%;
+}
+
+.arrow:hover {
+	background-color: rgb(127, 125, 125)
+}
