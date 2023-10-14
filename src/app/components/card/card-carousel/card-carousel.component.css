@@ -1,15 +1,14 @@
 .carousel-container {
 	position: relative;
-  text-align: center;
-  width: 100%; /* Use 100% para que o carrossel ocupe a largura disponível */
-
+	text-align: center;
+	width: 100%; /* Use 100% para que o carrossel ocupe a largura disponível */
+	overflow: hidden;
 }
 
 .carousel {
   display: flex;
   overflow: hidden;
   transition: transform 1s ease-in-out;
-	margin-top: 0px;
 
 }
 
@@ -50,33 +49,26 @@ button {
 }
 
 .arrow-container {
-  width: 60px; /* A largura do contêiner deve corresponder à largura da imagem */
-  display: flex;
-   /* Coloca as setas à esquerda e à direita */
-  align-items: center; /* Centraliza verticalmente as setas */
   position: absolute;
-  top: 0;
+  top: 50%;
 }
 
 .arrow {
-  font-size: 100px; /* Tamanho do ícone de seta */
+  font-size: 40px; /* Tamanho do ícone de seta */
   cursor: pointer;
 	background-color: #98959551; /* Cor de fundo padrão */
+	color: #fff;
+	padding: 10px 20px;
   transition: background-color 0.3s; /* Adiciona uma transição suave */
 
 }
 
 .left-arrow {
-	z-index: 998;
-	color: #090909;
-	margin-top: 16%;
-	left: 25%;
+	left: 10px;
 }
 
 .right-arrow {
-	z-index: 998;
-	margin-top: 16%;
-	left: 67.1%;
+	right: 10px;
 }
 
 .arrow:hover {
